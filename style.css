@@ -1,6 +1,7 @@
 /*************************************
 ************ Global layout ***********
 **************************************/
+
 body {
 	font-weight: 400;
 }
@@ -35,9 +36,11 @@ body {
 }
 
 
+
 /*****************************
 *********** TOP BAR **********
 ******************************/
+
 #mobile_menu1{
 	height: 89vh;
     	overflow-y: scroll;
@@ -92,7 +95,7 @@ body {
 }
 
 #menu-new-site-nav-bar #menu-item-11152:hover{
-	color:#5065a4;;
+	color:#5065a4;
 }
 
 @media only screen and (min-width: 981px) {
@@ -118,9 +121,11 @@ body {
 }
 
 
+
 /*****************************
 *********** HELPERS **********
 ******************************/
+
 .border-radius-100 img {
 	border-radius: 100%;
 }
@@ -151,9 +156,11 @@ body {
 }
 
 
+
 /********************************
 *********** TYPOGRAPHY **********
 *********************************/
+
 h1 { font-size: 2rem !important; }
 
 h2 { font-size: 2rem !important; }
@@ -216,9 +223,11 @@ footer .et_pb_row_4_tb_footer p {
 }
 
 
+
 /**************************************
 *********** ANCHOR UNDERLINE **********
 ***************************************/
+
 .anchor-line,
 .more-link {
 	position: relative;
@@ -237,9 +246,11 @@ footer .et_pb_row_4_tb_footer p {
 }
 
 
+
 /*********************************
 *********** REVEAL MORE **********
 **********************************/
+
 .reveal-more-control .et_pb_module_header {
 	position: relative;
 	display: inline-block;
@@ -276,9 +287,11 @@ footer .et_pb_row_4_tb_footer p {
 }
 
 
+
 /***********************************
 *********** TABLE CONTROL **********
 ************************************/
+
 .table-control .dvmd_tm_image {
 	width: 56px;
 	height: 48px;
@@ -290,7 +303,6 @@ footer .et_pb_row_4_tb_footer p {
 .table-control .row-header {
 	cursor: pointer;
 	position: relative;
-	/*font-size: .85rem;*/
 	padding-right: 1.25rem;
 	font-size: 18px;
 	transition: transform 0.6s ease;
@@ -349,9 +361,11 @@ footer .et_pb_row_4_tb_footer p {
 }
 
 
+
 /*****************************************
 *********** CONTACT FORM CONTROL **********
 ******************************************/
+
 @media only screen and (min-width: 767px) {
 	.form-control form {
 		display: grid;
@@ -402,13 +416,16 @@ footer .et_pb_row_4_tb_footer p {
 	padding: 0;
 	margin: 0;
 }
+
 .form-control .hs-form-radio-display {
 	display: flex;
 }
+
 .form-control .hs-form-radio-display span {
 	display: flex;
 	align-self: center;
 }
+
 .form-control input[type="radio"] {
 	width: 20px;
 	height: 20px;
@@ -470,9 +487,11 @@ footer .et_pb_row_4_tb_footer p {
 }
 
 
+
 /**************************
 *********** BLOG **********
 ***************************/
+
 #sidebar {
 	background-color: #fff5ee;
 	padding: 1rem;
