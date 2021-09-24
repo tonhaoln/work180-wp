@@ -120,6 +120,30 @@ body {
 	}
 }
 
+/* DROP DOWN MENU */
+
+#mobile_menu1 .sub-menu{
+	display:none!important;
+}
+
+#mobile_menu1 .menu-item-has-children{
+	position:relative;
+}
+#mobile_menu1 .menu-item-has-children span{
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	background: white;
+	color:#222222;
+	border-radius: 4px;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 
 
 /*****************************
