@@ -179,6 +179,18 @@ body {
 	.col-or2 { order: 2; }
 }
 
+@media only screen and (max-width: 980px) {
+	.hide-mobile{
+		display:none;
+	}
+}
+
+@media only screen and (min-width: 980px) {
+	.hide-desktop{
+		display:none;
+	}
+}
+
 
 
 /********************************
