@@ -282,7 +282,7 @@ input#toggle:before{
 }
 
 @media only screen and (max-width: 768px){
-.breadcrumbs-control span[typeof="BreadcrumbList"]{
+/*.breadcrumbs-control span[typeof="BreadcrumbList"]{
 	display: block;
     	max-width: 240px;
     	white-space: nowrap;
@@ -304,18 +304,19 @@ input#toggle:before{
 	content:"";
 	position:inherit;
 	margin-left:auto;
+}*/
 }
+
+@media (min-width: 981px) and (max-width: 1040px) {
+	#breadcrumbs-control{
+		padding-left:164px!important;
+	}
 }
+
 
 /*****************************
 *********** HELPERS **********
 ******************************/
-@media (min-width: 981px) and (max-width: 1040px) {
-	#breadcrumbs-control{
-		padding-left:171px!important;
-	}
-}
-
 .border-radius-100 img {
 	border-radius: 100%;
 }
