@@ -48,6 +48,11 @@ body {
 *********** TOP BAR **********
 ******************************/
 
+.et_pb_menu__logo-wrap img{	
+	width:140px!important;
+	height: 37px!important;
+}
+
 @media only screen and (max-width: 768px){
 	header .et_pb_fullwidth_menu_0_tb_header.et_pb_fullwidth_menu{
 		padding-left: 0!important;
@@ -60,7 +65,7 @@ body {
 	
 	.et_pb_menu__logo-wrap{
 		padding-left: 1rem;
-	}
+	}	
 	
 .et_pb_fullwidth_menu .et_mobile_nav_menu{
 		margin:0 1rem!important;
@@ -115,16 +120,44 @@ body {
     	left: -4px;
 }
 
+/* Menu Desktop */
+#menu-new-site-nav-bar>li>a{
+	padding-top: 24px!important;
+	padding-bottom: 24px!important;
+}
+
+#menu-new-site-nav-bar>#menu-item-1516{
+	padding-left:0!important;
+}
+
+#menu-new-site-nav-bar .menu-item-has-children>a:first-child {
+    	padding-right: 1.03125rem;
+}
+
+#menu-new-site-nav-bar .menu-item-has-children>a:first-child:after {
+	font-family: 'Font Awesome 5 Free';
+    	content: "\f078";
+	font-size: 12px;
+}
+
+#menu-new-site-nav-bar #menu-item-11151 a{
+	padding-left: 0!important;
+    	padding-right: 0!important;
+    	width: 84px;
+}
+
 #menu-new-site-nav-bar #menu-item-11151:after{
 	content:"/";
-	transform: translateY(30px);
-    	padding-right: 8px;
-    	padding-left: 8px;
+	position: absolute;
+    	top: 50%;
+	transform: translateY(-50%);
+    	right: 20px;
 }
 
 #menu-new-site-nav-bar #menu-item-11152:before{
-	transform: translateY(30px);
-	padding-right: 8px;
+	position: absolute;
+    	top: 50%;
+    	transform: translate(-150%, -50%);
 }
 
 #menu-new-site-nav-bar #menu-item-11152:hover{
@@ -145,11 +178,12 @@ body {
 
 @media (min-width: 981px) and (max-width: 1040px) {
 	.et_pb_menu__logo img{
-		width: 112px;
+		width: 112px!important;
+		height:30px!important;
 	}
 	#menu-new-site-nav-bar li{
-		padding-left: 8px;
-		padding-right: 8px;
+		padding-left: 4px!important;
+		padding-right: 4px!important;
 	}
 }
 
@@ -171,7 +205,7 @@ input#toggle{
 	width:32px;
 	height:32px;
 	top: 4px;
-	right: 8px;
+	right: 12px;
 	-webkit-appearance: none;
     	-moz-appearance: none;
     	appearance: none;
@@ -209,10 +243,71 @@ input#toggle:before{
 }
 
 
+/*********************************
+*********** BREADCRUMBS **********
+**********************************/
+
+.breadcrumbs-control span.current, .breadcrumbs-control span.separator:nth-last-child(2), .breadcrumbs-control span[property="name"] span{
+	display:none;
+}
+
+.breadcrumbs-control span a{
+	color:#222222;
+}
+
+.breadcrumbs-control span a:hover{
+	text-decoration:underline;
+	color:#222222;
+}
+
+.breadcrumbs-control span.separator{
+	display: inline-block;
+    	overflow: hidden;
+    	text-indent: -9999px;
+}
+
+.breadcrumbs-control span.separator:before{
+    font-family: 'DM Sans',Helvetica,Arial,Lucida,sans-serif;
+	content:"/";
+	text-decoration:none!important;
+	text-indent: 0;
+	float: left;
+}
+
+@media only screen and (max-width: 768px){
+.breadcrumbs-control span[typeof="BreadcrumbList"]{
+	display: block;
+    	max-width: 240px;
+    	white-space: nowrap;
+    	overflow: hidden;
+}
+
+.breadcrumbs-control span[typeof="BreadcrumbList"]:after{
+	content:". . .";
+	position:absolute;
+	left:248px;
+}
+
+.breadcrumbs-control span[typeof="BreadcrumbList"].active{
+    	max-width: 100%;
+    	white-space: inherit;
+    	overflow: visible;
+}
+.breadcrumbs-control span[typeof="BreadcrumbList"].active:after{
+	content:"";
+	position:inherit;
+	margin-left:auto;
+}
+}
 
 /*****************************
 *********** HELPERS **********
 ******************************/
+@media (min-width: 981px) and (max-width: 1040px) {
+	#breadcrumbs-control{
+		padding-left:171px!important;
+	}
+}
 
 .border-radius-100 img {
 	border-radius: 100%;
