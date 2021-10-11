@@ -53,6 +53,7 @@ body {
 	height: 37px!important;
 }
 
+
 @media only screen and (max-width: 768px){
 	header .et_pb_fullwidth_menu_0_tb_header.et_pb_fullwidth_menu{
 		padding-left: 0!important;
@@ -119,6 +120,7 @@ body {
     	top: 10px;
     	left: -4px;
 }
+
 
 /* Menu Desktop */
 #menu-new-site-nav-bar>li>a{
@@ -242,6 +244,11 @@ input#toggle:before{
 	}
 }
 
+
+/* Blog Post: Fix Menu Position */
+.post-template-default .et_pb_fullwidth_menu .et_pb_row.clearfix{
+	display: flex!important;
+}
 
 /*********************************
 *********** BREADCRUMBS **********
