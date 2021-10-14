@@ -24,8 +24,7 @@ body {
 		padding-right: 1rem !important;
 	}
 	
-	header .et_pb_fullwidth_menu_0_tb_header.et_pb_fullwidth_menu,
-	.et_pb_row.et_pb_row_1_tb_footer.et_pb_row_4col {
+	header .et_pb_fullwidth_menu_0_tb_header.et_pb_fullwidth_menu, .et_pb_row.et_pb_row_1_tb_footer.et_pb_row_4col {
 		padding-left: 1rem !important;
 		padding-right: 1rem !important;
 	}
@@ -260,6 +259,7 @@ input#toggle:before{
 
 .breadcrumbs-control span a{
 	color:#222222;
+	font-size: 0.875rem;
 }
 
 .breadcrumbs-control span a:hover{
@@ -453,10 +453,53 @@ footer .et_pb_row_4_tb_footer p {
 	height: 1px;
 	background: #5065a4;
 	position: absolute;
-	bottom: -4px;
+	bottom: -2px;
 	left: 0;
 }
 
+.anchor-line-primary:after,
+.more-link-primary:after {
+	background: #DC2579!important;
+}
+
+
+
+/*************************************
+*********** EVENTS TEMPLATE **********
+**************************************/
+
+.events-template-default > #page-container > #et-boc > #et-main-area .et_pb_blurb_description a {
+	text-decoration:none!important;
+	position:relative;
+	margin-top: .25rem;
+	display: inline-block;
+	color:#5065a4!important;
+}
+
+#events-schedule-control .et_pb_blurb_description a:after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #5065a4!important;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#events-schedule-control .et_pb_module_header{
+	padding-bottom: .5rem;
+}
+
+.events-template-default > #page-container > #et-boc > #et-main-area > #main-content > .et-l.et-l--body > .et_builder_inner_content.et_pb_gutters3 > .et_pb_section > .et_pb_row.et_pb_row_0_tb_body{
+	padding:0!important;
+}
+
+@media only screen and (max-width: 980px) {
+	.events-template-default > #page-container > #et-boc > #et-main-area > .et-l.et-l--footer .et_pb_row_1_tb_footer{
+		padding-left:1rem!important;
+		padding-right:1rem!important;
+	}
+}
 
 
 /*********************************
@@ -796,6 +839,24 @@ blockquote{
 	height: 186px;
 	object-fit: cover;
 }
+
+.post-template-default .et_pb_image_sticky{
+	padding-bottom: 52.3%;	
+}
+
+.post-template-default .et_pb_image_sticky
+.et_pb_image_wrap{
+	position:inherit!important;
+}
+
+.post-template-default .et_pb_image_sticky img{
+	position: absolute;
+    height: 100%;
+    left: 0;
+    width: 100%!important;
+    object-fit: cover!important;
+}
+
 
 @media only screen and (min-width: 768px) {
 	.more-articles article {
