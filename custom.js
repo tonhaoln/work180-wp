@@ -18,24 +18,16 @@ jQuery(function($) {
     //Breadcrumbs TOGGLE MOBILE
     if (window.matchMedia('(max-width: 768px)').matches) {
 
-        var s = $('.breadcrumbs-control span[typeof="BreadcrumbList"]').html();
+        var s = $('#breadcrumbs-control span[typeof="BreadcrumbList"]').html();
 
-        if (s.split(' ').length > 33) {
-            $('.breadcrumbs-control span[typeof="BreadcrumbList"]').html(s.split(' ').slice(0, 33).join(' ') + '<a href="#" class="br-expand">...</a>');
+        if (s.split(' ').length > 30) {
+            $('#breadcrumbs-control span[typeof="BreadcrumbList"]').html(s.split(' ').slice(0, 30).join(' ') + '<a href="#" class="br-expand">&nbsp;...</a>');
         }
 
         $("a.br-expand").click(function() {
-            $('.breadcrumbs-control span[typeof="BreadcrumbList"]').html(s);
+            $('#breadcrumbs-control span[typeof="BreadcrumbList"]').html(s);
         });
     }
-
-    //$('.breadcrumbs-control span[typeof="BreadcrumbList"]').click(function() {
-    //$(this).toggleClass('active');			
-    //});
-
-    //$('.fa').click(function() {
-        //alert('The button was clicked!'); //$(this).toggleClass('active');			
-    //});
-
+    
 });
 </script>
