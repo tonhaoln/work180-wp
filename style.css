@@ -429,19 +429,21 @@ input#toggle:before{
 *********** BREADCRUMBS **********
 **********************************/
 
-#breadcrumbs-control span.current, #breadcrumbs-control span.separator:nth-last-child(2), #breadcrumbs-control span[property="name"] span{
-	display:none;
+#breadcrumbs-control:not(.single-event-breadcrumbs) span.current, 
+#breadcrumbs-control:not(.single-event-breadcrumbs) span.separator:nth-last-child(2), 
+#breadcrumbs-control:not(.single-event-breadcrumbs) span[property="name"] span{
+	display:none!important;
 }
 
-#breadcrumbs-control, #breadcrumbs-control span a, #breadcrumbs-control .et_pb_text_3{
+#breadcrumbs-control, #breadcrumbs-control span a, #breadcrumbs-control .et_pb_text{
 	color:#222222;
-	font-size: 0.875rem;
+	font-size: 0.875rem!important;
 	line-height: 1.3!important;
 }
 
 #breadcrumbs-control span a:hover{
-	text-decoration:underline;
-	color:#222222;
+	text-decoration:underline!important;;;
+	color:#222222!important;
 }
 
 #breadcrumbs-control span.separator{
@@ -959,7 +961,7 @@ blockquote{
 }
 
 .events-template-default > #page-container > #et-boc > #et-main-area .et_pb_section_0_tb_body {
-	padding-top: 80px!important;
+	padding-top: 0px!important;
 }
 
 #events-schedule-control .et_pb_blurb_description a:after {
@@ -991,16 +993,18 @@ blockquote{
 	color:#5065a4!important;
 }
 
-/*** EVENTS TEMP ***/
-.postid-16515 #et-boc .et_pb_section_0{
-	margin-top: 0!important;
-}
 
-.postid-16515 #et-boc #breadcrumbs-control a{
+
+/*** EVENTS TEMP ***/
+/*.postid-16515 #et-boc .et_pb_section_0{
+	margin-top: 0!important;
+}*/
+
+.single-events #et-boc #breadcrumbs-control a{
 	color:#000000!important;
 	text-decoration:none;
 }
 
-.postid-16515 #et-boc #breadcrumbs-control a:hover{
+.single-events #et-boc #breadcrumbs-control a:hover{
 	text-decoration:underline;
 }
