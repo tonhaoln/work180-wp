@@ -1,3 +1,4 @@
+<?php 
 /**
 * Append checkboxes on the WP MENU menu-item-has-children
 *
@@ -10,6 +11,7 @@ function yourprefix_menu_arrow($item_output, $item, $depth, $args) {
     return $item_output;
 }
 add_filter('walker_nav_menu_start_el', 'yourprefix_menu_arrow', 10, 4);
+
 
 /**
  * Register new image sizes
@@ -29,3 +31,18 @@ function my_custom_sizes( $sizes ) {
 		'blog-square' => __( 'Blog Square' ),
     ));
 }
+
+
+
+/**
+ * Search Function to only search posts
+ */
+function SearchFilter($query) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+    return $query;
+}
+add_filter('pre_get_posts','SearchFilter');
+
+?>
