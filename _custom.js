@@ -1,7 +1,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-<script>	
+<script>    
 jQuery(function($) {
+    
+    //Remobe blog AJAX pagination
+    $(document).ready(function() {
+        $(".wp-pagenavi a").click(function() {
+            window.location.href = $(this).attr('href');
+            return false;
+        });
+    });
     
     //Products and Services Table READ MORE
     $('.table-control .row-header').click(function() {
