@@ -966,6 +966,81 @@ blockquote{
 }
 
 
+/*
+ * BLOG LATEST RESULTS - 5
+ */
+.blog-settings-column-size-1of5 .et_pb_salvattore_content[data-columns]::before {
+	content: '5 .column.size-1of5' !important;
+}
+
+@media only screen and (min-width: 768px) {
+	.blog-settings-column-size-1of5 .column.size-1of5 {
+	    width: 45%!important;
+	    margin-right: 5%;
+	}
+}
+@media only screen and ( min-width: 981px ) {
+	.blog-settings-column-size-1of5 .column.size-1of5 {
+	    width: 15%!important;	    
+	}
+}
+
+.blog-settings-column-size-1of5 .et_pb_blog_grid .et_pb_post{
+	border: none;
+	padding: 0;
+	background: transparent;
+}
+
+.blog-settings-column-size-1of5 .et_pb_image_container{
+	margin: 0;
+}
+
+
+
+/*
+ * BLOG LATEST RESULTS - 4
+ */
+.blog-settings-column-size-1of4 .et_pb_salvattore_content[data-columns]::before {
+	content: '4 .column.size-1of4' !important;
+}
+
+@media only screen and (min-width: 768px) {
+	.blog-settings-column-size-1of4 .column.size-1of4 {
+	    width: 47.5%!important;	
+	}
+	.blog-settings-column-size-1of4 .column.size-1of4 + .column.size-1of4 {	    
+	    margin-left: 5%;
+	}
+	.blog-settings-column-size-1of4 .column.size-1of4:nth-child(3) {	    
+	    margin-left: 0!important;
+	}
+	.blog-settings-column-size-1of4 .column.size-1of4 article{
+		min-height: 340px;
+	}
+}
+@media only screen and ( min-width: 981px ) {
+	.blog-settings-column-size-1of4 .column.size-1of4 {
+	    width: 21.25%!important;	    
+	}
+	.blog-settings-column-size-1of4 .column.size-1of4 article{
+		min-height: 284px;
+	}
+	.blog-settings-column-size-1of4 .column.size-1of4:nth-child(3) {	    
+	    margin-left: 5%!important;
+	}
+}
+
+.blog-settings-column-size-1of4 .et_pb_blog_grid .et_pb_post{
+	border: none;
+	padding: 0;
+	background: transparent;
+}
+
+.blog-settings-column-size-1of4 .et_pb_image_container{
+	margin: 0;
+}
+
+
 
 /*************************************
 *********** EVENTS TEMPLATE **********
