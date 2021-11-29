@@ -1,3 +1,4 @@
+<?php
 /**
 * Append checkboxes on the WP MENU menu-item-has-children
 *
