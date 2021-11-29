@@ -1,4 +1,3 @@
-<?php 
 /**
 * Append checkboxes on the WP MENU menu-item-has-children
 *
@@ -44,5 +43,3 @@ function SearchFilter($query) {
     return $query;
 }
 add_filter('pre_get_posts','SearchFilter');
-
-?>
