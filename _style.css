@@ -948,6 +948,10 @@ blockquote{
 	padding-bottom: 52px !important;
 }
 
+.single-post a.et_pb_button{
+	text-decoration: none!important;
+}
+
 @media only screen and (min-width: 768px) {
 	.more-articles article {
 		min-height: 360px;
