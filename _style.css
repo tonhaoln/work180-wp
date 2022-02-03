@@ -177,6 +177,38 @@ footer .et_pb_row_4_tb_footer p {
     padding-left: 2rem!important;
 }
 
+/*.inline-buttons .et_pb_button_module_wrapper {
+    display: inline-block;
+}
+
+.inline-buttons .et_pb_button_module_wrapper:first-child{
+	margin-right:1rem;
+}*/
+
+.inline-buttons-left{
+	display:flex;
+	column-gap:1rem;
+	flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 767px) {
+	.inline-buttons{
+		
+	}
+}
+
+.inline-buttons-center{
+	display:flex;
+	column-gap:1rem;
+	flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 767px) {
+	.inline-buttons-center{
+		justify-content:center;
+	}
+}
+
 
 
 
@@ -903,7 +935,8 @@ blockquote{
 }
 
 #sidebar #block-5 li.cat-item-72,
-#sidebar #block-5 li.cat-item-71 {
+#sidebar #block-5 li.cat-item-71,
+#sidebar #block-5 li.cat-item-76 {
 	display: block;
 }
 
