@@ -512,9 +512,16 @@ input#toggle:before{
 #breadcrumbs-control{		
     padding:1.5rem 1rem !important;
 }
+.events-template-default>#page-container>#et-boc>#et-main-area>#main-content>.et-l.et-l--body>.et_builder_inner_content.et_pb_gutters3>.et_pb_section>.et_pb_row.et_pb_row_0_tb_body#breadcrumbs-control{
+	padding:1.5rem 1rem !important;	
+}
 
 @media (min-width: 981px) and (max-width: 1040px) {
 	#breadcrumbs-control{
+		padding-left:148px!important;
+		padding:2rem 0 1.5rem 148px !important;
+	}
+.events-template-default>#page-container>#et-boc>#et-main-area>#main-content>.et-l.et-l--body>.et_builder_inner_content.et_pb_gutters3>.et_pb_section>.et_pb_row.et_pb_row_0_tb_body#breadcrumbs-control{
 		padding-left:148px!important;
 		padding:2rem 0 1.5rem 148px !important;
 	}
@@ -522,6 +529,9 @@ input#toggle:before{
 
 @media only screen and (min-width: 1040px){
 	#breadcrumbs-control{
+		padding:2rem 0 1.5rem 10.95rem !important;
+	}
+	.events-template-default>#page-container>#et-boc>#et-main-area>#main-content>.et-l.et-l--body>.et_builder_inner_content.et_pb_gutters3>.et_pb_section>.et_pb_row.et_pb_row_0_tb_body#breadcrumbs-control{
 		padding:2rem 0 1.5rem 10.95rem !important;
 	}
 }
@@ -946,12 +956,47 @@ blockquote{
 	margin-top: 1.5rem;
 }
 
+#sidebar #block-8 a{
+	position: relative !important;
+	display: inline-block !important;
+	color:#5065a4 !important;
+}
+
+#sidebar #block-8 a strong{
+	font-weight:300;
+}
+
+#sidebar #block-8 a:after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #5065a4;
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+}
+
+.widget_search #searchsubmit{
+	position: relative;
+    width: 100%;
+    margin-top: 0.5rem!important;
+}
+
 .blog-latest-articles-wrapper #sidebar #block-8 {
 	display: none;
 }
 
 .more-articles .entry-featured-image-url img {
 	height: 186px;
+	object-fit: cover;
+}
+
+.more-articles-category article{
+	border: 1px solid #AACAE2 !important;
+}
+
+.more-articles-category .entry-featured-image-url img{
+	aspect-ratio: 16 / 9;
 	object-fit: cover;
 }
 
