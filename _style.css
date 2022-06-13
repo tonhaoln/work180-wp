@@ -378,6 +378,18 @@ footer .et_pb_row_4_tb_footer p {
 	color:#5065a4;
 }
 
+/* 3rd Level submenu **/
+.menu-item-has-children .menu-item-has-children>a:first-child:after {
+	top:10px!important;
+	right:4px!important;
+	transform:rotate(-90deg);
+}
+
+#main-nav .sub-menu .sub-menu {
+    box-shadow: none;
+}
+
+
 @media only screen and (min-width: 981px) {
 	#menu-new-site-nav-bar #menu-item-11151,
 	#menu-new-site-nav-bar #menu-item-11152{
@@ -1219,4 +1231,10 @@ blockquote{
 
 .single-events #et-boc #breadcrumbs-control a:hover{
 	text-decoration:underline;
+}
+
+
+/*** FIX ABOUT FOOTER TEMP ***/
+.page-id-1110 footer{
+	display:none;
 }
